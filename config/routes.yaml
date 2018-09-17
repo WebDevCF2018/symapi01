@@ -7,3 +7,6 @@ notreAccueil:
 pageDeux:
     path: /deux
     controller: App\Controller\IndexController::Deux
+premierTwig:
+    path: /twig
+    controller: App\Controller\MyTwigController::FirstTwig
