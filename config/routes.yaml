@@ -3,10 +3,10 @@
 #    controller: App\Controller\DefaultController::index => namespace\nomfichier
 notreAccueil:
     path: /
-    controller: App\Controller\IndexController::Accueil
+    controller: App\Controller\IndexController::accueilAction
 pageDeux:
     path: /deux
-    controller: App\Controller\IndexController::Deux
+    controller: App\Controller\IndexController::deuxAction
 premierTwig:
     path: /twig
-    controller: App\Controller\MyTwigController::FirstTwig
+    controller: App\Controller\MyTwigController::FirstTwigAction

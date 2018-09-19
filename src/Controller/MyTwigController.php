@@ -16,8 +16,8 @@ class MyTwigController extends AbstractController
 {
 
     // méthode appelé avec 127.0.0.1:8000/twig (voir config/routes.yaml)
-    function FirstTwig(){
+    function FirstTwigAction(){
         // utilisation de la méthode render de twig (cherche automatiquement dans le dossier templates)
-        return $this->render("base.html.twig");
+        return $this->render("firsttwig.html.twig");
     }
 }

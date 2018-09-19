@@ -1,0 +1,23 @@
+{# ceci est un commentaire
+
+on va étendre la vue depuis base.html.twig
+#}
+{% extends "base.html.twig" %}
+{# changement du contenu du bloc title => redéfinition #}
+{% block title %}Notre premier modèle twig{% endblock %}
+
+{# on veut garder le block titre (hash1), mais rajouter un <h2>, pour celà, on affiche la méthode parent() qui récupère le contenu du bloc de modèle parent
+
+ {{  }} sont équivalent à echo "" en php
+
+ #}
+{% block hash1 %}{{ parent() }}<h2>sous-titre</h2>{% endblock %}
+
+{# on veut changer le bloc menu #}
+{% block menu %}
+<ul>
+    <li><a href="">Accueil</a></li>
+    <li><a href="">Page 2</a></li>
+    <li>Première page twig</li>
+</ul>
+{% endblock %}

@@ -9,6 +9,9 @@
         {% block hash1 %}<h1>Titre par défaut</h1>{% endblock %}
         {% block body %}
         <div id="content">
+            <nav>{% block menu %}
+            <ul><li>Rien</li></ul>
+            {% endblock %}</nav>
             <p>du contenu par défaut</p>
         </div>
         {% endblock %}
